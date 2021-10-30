@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    margin: -12px -4px;
+    height: 100px;
+}
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;     
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    padding: 3px 40px;
+    text-decoration: none;  
+}
+#navbar ul li a:hover{
+    color:white;
+    background-color:black;
+}
+
+
+
+
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 746px;
+    justify-content: center;
+    align-items: center;
+}
+/*for background*/
+#home::before{
+    content: "";
+    background: url('../img/lpu.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 754px;
+    z-index: -2; 
+    opacity: 0.99;
+}
+#box{
+    background-color: black;
+    height: 500px;
+    margin-left: 492px;
+    opacity: 0.5;
+    padding: 50px;
+    
+}
+
+#home h1{
+    color: orangered;
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+    opacity: 1;
+}
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*Ultility Class*/
+.h-primary{
+    font-size: 3.2rem;
+    padding: 12px;
+    color: rgb(85, 57, 52);
+    font-family:  'Montserrat', sans-serif;
+}
+.h-secondary{
+    font-size: 1.6rem;
+    padding: 12px;
+    color: rgb(85, 57, 52);
+    font-family:  'Montserrat', sans-serif;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 1px solid white;
+    color: orangered;
+    background-color: white;
+    margin: 80px;
+    width: 25%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif; 
+    opacity: 1;
+    
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(233, 229, 229);
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
